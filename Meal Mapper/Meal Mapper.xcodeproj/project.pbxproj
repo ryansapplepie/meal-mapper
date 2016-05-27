@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94120DDD1B1BFC1A00144E3C /* currentLocationIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 94120DDC1B1BFC1A00144E3C /* currentLocationIcon.png */; };
+		94177DAA1B4287B800A6F5B8 /* addPhotoIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94177DA91B4287B800A6F5B8 /* addPhotoIcon.jpg */; };
+		94177DAC1B428A2E00A6F5B8 /* mealMaperIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 94177DAB1B428A2E00A6F5B8 /* mealMaperIcon.png */; };
+		94177DB01B428DE400A6F5B8 /* mealMaperIconWithoutBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 94177DAF1B428DE400A6F5B8 /* mealMaperIconWithoutBackground.png */; };
+		944414401B1C33A2009664E9 /* listViewIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9444143F1B1C33A2009664E9 /* listViewIcon.png */; };
+		944414461B1C368B009664E9 /* arrowIcon 35x35.png in Resources */ = {isa = PBXBuildFile; fileRef = 944414451B1C368B009664E9 /* arrowIcon 35x35.png */; };
+		944F9DD51B0DB2CF00FBAED9 /* tempIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 944F9DD41B0DB2CF00FBAED9 /* tempIcon.png */; };
+		944F9DD71B0DB39C00FBAED9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944F9DD61B0DB39C00FBAED9 /* QuartzCore.framework */; };
+		944F9DDA1B0DDE5400FBAED9 /* MealTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 944F9DD91B0DDE5400FBAED9 /* MealTableCell.xib */; };
+		9468C5E01B1321EC0004E657 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9468C5DF1B1321EC0004E657 /* MapKit.framework */; };
+		9468C5E31B1322940004E657 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9468C5E21B1322940004E657 /* MapViewController.m */; };
+		9470E9CD1B09EE6F00C650E3 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = 9470E9CC1B09EE6F00C650E3 /* Meal.m */; };
+		947A535E1B1024720031891E /* MealTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 947A535D1B1024720031891E /* MealTableViewCell.m */; };
+		94903F191B06FB6E0090FF78 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94903F181B06FB6E0090FF78 /* CoreLocation.framework */; };
+		94903F1B1B0710F10090FF78 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94903F1A1B0710F10090FF78 /* AddressBookUI.framework */; };
+		94903F1F1B073BE80090FF78 /* facebookIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 94903F1C1B073BE80090FF78 /* facebookIcon.png */; };
+		94903F201B073BE80090FF78 /* messagesIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 94903F1D1B073BE80090FF78 /* messagesIcon.png */; };
+		94903F211B073BE80090FF78 /* twitterIcon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 94903F1E1B073BE80090FF78 /* twitterIcon.jpeg */; };
+		94903F261B0746AB0090FF78 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94903F251B0746AB0090FF78 /* Social.framework */; };
+		9494CB981B2CFC5A00278DCB /* sharedViaIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9494CB971B2CFC5A00278DCB /* sharedViaIcon.png */; };
+		9494CB9B1B2D0D5200278DCB /* DirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494CB9A1B2D0D5200278DCB /* DirectionsViewController.m */; };
+		9496A9A31B1DA46D00D7381A /* testLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 9496A9A21B1DA46D00D7381A /* testLocation.gpx */; };
+		94A9F6761B082F010096A675 /* CategoryTagTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A9F6751B082F010096A675 /* CategoryTagTableViewController.m */; };
+		94AC5BCB1AE78E87002C5AA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AC5BCA1AE78E87002C5AA2 /* main.m */; };
+		94AC5BCE1AE78E87002C5AA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AC5BCD1AE78E87002C5AA2 /* AppDelegate.m */; };
+		94AC5BD11AE78E87002C5AA2 /* Meal_Mapper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94AC5BCF1AE78E87002C5AA2 /* Meal_Mapper.xcdatamodeld */; };
+		94AC5BD41AE78E87002C5AA2 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AC5BD31AE78E87002C5AA2 /* MasterViewController.m */; };
+		94AC5BD71AE78E87002C5AA2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AC5BD61AE78E87002C5AA2 /* DetailViewController.m */; };
+		94AC5BDA1AE78E87002C5AA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94AC5BD81AE78E87002C5AA2 /* Main.storyboard */; };
+		94AC5BDC1AE78E87002C5AA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94AC5BDB1AE78E87002C5AA2 /* Images.xcassets */; };
+		94AC5BDF1AE78E88002C5AA2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94AC5BDD1AE78E88002C5AA2 /* LaunchScreen.xib */; };
+		94AC5BEB1AE78E88002C5AA2 /* Meal_MapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AC5BEA1AE78E88002C5AA2 /* Meal_MapperTests.m */; };
+		94AC5BF61AE79104002C5AA2 /* AddMealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AC5BF51AE79104002C5AA2 /* AddMealViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94AC5BE51AE78E88002C5AA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94AC5BBD1AE78E87002C5AA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94AC5BC41AE78E87002C5AA2;
+			remoteInfo = "Meal Mapper";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		94120DDC1B1BFC1A00144E3C /* currentLocationIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = currentLocationIcon.png; path = "../../../Pictures/Meal Mapper Photos/currentLocationIcon.png"; sourceTree = "<group>"; };
+		94177DA91B4287B800A6F5B8 /* addPhotoIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = addPhotoIcon.jpg; sourceTree = "<group>"; };
+		94177DAB1B428A2E00A6F5B8 /* mealMaperIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mealMaperIcon.png; sourceTree = "<group>"; };
+		94177DAF1B428DE400A6F5B8 /* mealMaperIconWithoutBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mealMaperIconWithoutBackground.png; sourceTree = "<group>"; };
+		9444143F1B1C33A2009664E9 /* listViewIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listViewIcon.png; sourceTree = "<group>"; };
+		944414451B1C368B009664E9 /* arrowIcon 35x35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrowIcon 35x35.png"; sourceTree = "<group>"; };
+		944F9DD21B0DA8A100FBAED9 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		944F9DD41B0DB2CF00FBAED9 /* tempIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tempIcon.png; sourceTree = "<group>"; };
+		944F9DD61B0DB39C00FBAED9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		944F9DD91B0DDE5400FBAED9 /* MealTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MealTableCell.xib; sourceTree = "<group>"; };
+		9468C5DF1B1321EC0004E657 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9468C5E11B1322940004E657 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		9468C5E21B1322940004E657 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		9470E9CB1B09EE6F00C650E3 /* Meal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
+		9470E9CC1B09EE6F00C650E3 /* Meal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
+		947A535C1B1024720031891E /* MealTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealTableViewCell.h; sourceTree = "<group>"; };
+		947A535D1B1024720031891E /* MealTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealTableViewCell.m; sourceTree = "<group>"; };
+		94903F181B06FB6E0090FF78 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		94903F1A1B0710F10090FF78 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		94903F1C1B073BE80090FF78 /* facebookIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookIcon.png; sourceTree = "<group>"; };
+		94903F1D1B073BE80090FF78 /* messagesIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messagesIcon.png; sourceTree = "<group>"; };
+		94903F1E1B073BE80090FF78 /* twitterIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twitterIcon.jpeg; sourceTree = "<group>"; };
+		94903F251B0746AB0090FF78 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		9494CB971B2CFC5A00278DCB /* sharedViaIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sharedViaIcon.png; sourceTree = "<group>"; };
+		9494CB991B2D0D5200278DCB /* DirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionsViewController.h; sourceTree = "<group>"; };
+		9494CB9A1B2D0D5200278DCB /* DirectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionsViewController.m; sourceTree = "<group>"; };
+		9496A9A21B1DA46D00D7381A /* testLocation.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = testLocation.gpx; path = ../testLocation.gpx; sourceTree = "<group>"; };
+		94A9F6741B082F010096A675 /* CategoryTagTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTagTableViewController.h; sourceTree = "<group>"; };
+		94A9F6751B082F010096A675 /* CategoryTagTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTagTableViewController.m; sourceTree = "<group>"; };
+		94AC5BC51AE78E87002C5AA2 /* Meal Mapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meal Mapper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94AC5BC91AE78E87002C5AA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94AC5BCA1AE78E87002C5AA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		94AC5BCC1AE78E87002C5AA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		94AC5BCD1AE78E87002C5AA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		94AC5BD01AE78E87002C5AA2 /* Meal_Mapper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Meal_Mapper.xcdatamodel; sourceTree = "<group>"; };
+		94AC5BD21AE78E87002C5AA2 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		94AC5BD31AE78E87002C5AA2 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		94AC5BD51AE78E87002C5AA2 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		94AC5BD61AE78E87002C5AA2 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		94AC5BD91AE78E87002C5AA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94AC5BDB1AE78E87002C5AA2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		94AC5BDE1AE78E88002C5AA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		94AC5BE41AE78E88002C5AA2 /* Meal MapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meal MapperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94AC5BE91AE78E88002C5AA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94AC5BEA1AE78E88002C5AA2 /* Meal_MapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Meal_MapperTests.m; sourceTree = "<group>"; };
+		94AC5BF41AE79104002C5AA2 /* AddMealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMealViewController.h; sourceTree = "<group>"; };
+		94AC5BF51AE79104002C5AA2 /* AddMealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMealViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94AC5BC21AE78E87002C5AA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9468C5E01B1321EC0004E657 /* MapKit.framework in Frameworks */,
+				944F9DD71B0DB39C00FBAED9 /* QuartzCore.framework in Frameworks */,
+				94903F261B0746AB0090FF78 /* Social.framework in Frameworks */,
+				94903F1B1B0710F10090FF78 /* AddressBookUI.framework in Frameworks */,
+				94903F191B06FB6E0090FF78 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94AC5BE11AE78E88002C5AA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		944F9DD81B0DDDF100FBAED9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				94177DAF1B428DE400A6F5B8 /* mealMaperIconWithoutBackground.png */,
+				94177DAB1B428A2E00A6F5B8 /* mealMaperIcon.png */,
+				94177DA91B4287B800A6F5B8 /* addPhotoIcon.jpg */,
+				9494CB971B2CFC5A00278DCB /* sharedViaIcon.png */,
+				944414451B1C368B009664E9 /* arrowIcon 35x35.png */,
+				9444143F1B1C33A2009664E9 /* listViewIcon.png */,
+				94120DDC1B1BFC1A00144E3C /* currentLocationIcon.png */,
+				94903F1C1B073BE80090FF78 /* facebookIcon.png */,
+				94903F1D1B073BE80090FF78 /* messagesIcon.png */,
+				944F9DD41B0DB2CF00FBAED9 /* tempIcon.png */,
+				94903F1E1B073BE80090FF78 /* twitterIcon.jpeg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		9496A9A41B1DA4E500D7381A /* GPX Files */ = {
+			isa = PBXGroup;
+			children = (
+				9496A9A21B1DA46D00D7381A /* testLocation.gpx */,
+			);
+			name = "GPX Files";
+			sourceTree = "<group>";
+		};
+		94AC5BBC1AE78E87002C5AA2 = {
+			isa = PBXGroup;
+			children = (
+				9468C5DF1B1321EC0004E657 /* MapKit.framework */,
+				944F9DD61B0DB39C00FBAED9 /* QuartzCore.framework */,
+				944F9DD21B0DA8A100FBAED9 /* MessageUI.framework */,
+				94903F251B0746AB0090FF78 /* Social.framework */,
+				94903F1A1B0710F10090FF78 /* AddressBookUI.framework */,
+				94903F181B06FB6E0090FF78 /* CoreLocation.framework */,
+				94AC5BC71AE78E87002C5AA2 /* Meal Mapper */,
+				94AC5BE71AE78E88002C5AA2 /* Meal MapperTests */,
+				94AC5BC61AE78E87002C5AA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94AC5BC61AE78E87002C5AA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94AC5BC51AE78E87002C5AA2 /* Meal Mapper.app */,
+				94AC5BE41AE78E88002C5AA2 /* Meal MapperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94AC5BC71AE78E87002C5AA2 /* Meal Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				94AC5BCC1AE78E87002C5AA2 /* AppDelegate.h */,
+				94AC5BCD1AE78E87002C5AA2 /* AppDelegate.m */,
+				94AC5BD21AE78E87002C5AA2 /* MasterViewController.h */,
+				94AC5BD31AE78E87002C5AA2 /* MasterViewController.m */,
+				947A535C1B1024720031891E /* MealTableViewCell.h */,
+				947A535D1B1024720031891E /* MealTableViewCell.m */,
+				94AC5BD51AE78E87002C5AA2 /* DetailViewController.h */,
+				94AC5BD61AE78E87002C5AA2 /* DetailViewController.m */,
+				94AC5BF41AE79104002C5AA2 /* AddMealViewController.h */,
+				94AC5BF51AE79104002C5AA2 /* AddMealViewController.m */,
+				94A9F6741B082F010096A675 /* CategoryTagTableViewController.h */,
+				94A9F6751B082F010096A675 /* CategoryTagTableViewController.m */,
+				9468C5E11B1322940004E657 /* MapViewController.h */,
+				9468C5E21B1322940004E657 /* MapViewController.m */,
+				9494CB991B2D0D5200278DCB /* DirectionsViewController.h */,
+				9494CB9A1B2D0D5200278DCB /* DirectionsViewController.m */,
+				9470E9CB1B09EE6F00C650E3 /* Meal.h */,
+				9470E9CC1B09EE6F00C650E3 /* Meal.m */,
+				94AC5BD81AE78E87002C5AA2 /* Main.storyboard */,
+				94AC5BDD1AE78E88002C5AA2 /* LaunchScreen.xib */,
+				944F9DD91B0DDE5400FBAED9 /* MealTableCell.xib */,
+				94AC5BDB1AE78E87002C5AA2 /* Images.xcassets */,
+				94AC5BCF1AE78E87002C5AA2 /* Meal_Mapper.xcdatamodeld */,
+				9496A9A41B1DA4E500D7381A /* GPX Files */,
+				944F9DD81B0DDDF100FBAED9 /* Images */,
+				94AC5BC81AE78E87002C5AA2 /* Supporting Files */,
+			);
+			path = "Meal Mapper";
+			sourceTree = "<group>";
+		};
+		94AC5BC81AE78E87002C5AA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94AC5BC91AE78E87002C5AA2 /* Info.plist */,
+				94AC5BCA1AE78E87002C5AA2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94AC5BE71AE78E88002C5AA2 /* Meal MapperTests */ = {
+			isa = PBXGroup;
+			children = (
+				94AC5BEA1AE78E88002C5AA2 /* Meal_MapperTests.m */,
+				94AC5BE81AE78E88002C5AA2 /* Supporting Files */,
+			);
+			path = "Meal MapperTests";
+			sourceTree = "<group>";
+		};
+		94AC5BE81AE78E88002C5AA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94AC5BE91AE78E88002C5AA2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94AC5BC41AE78E87002C5AA2 /* Meal Mapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94AC5BEE1AE78E88002C5AA2 /* Build configuration list for PBXNativeTarget "Meal Mapper" */;
+			buildPhases = (
+				94AC5BC11AE78E87002C5AA2 /* Sources */,
+				94AC5BC21AE78E87002C5AA2 /* Frameworks */,
+				94AC5BC31AE78E87002C5AA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Meal Mapper";
+			productName = "Meal Mapper";
+			productReference = 94AC5BC51AE78E87002C5AA2 /* Meal Mapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94AC5BE31AE78E88002C5AA2 /* Meal MapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94AC5BF11AE78E88002C5AA2 /* Build configuration list for PBXNativeTarget "Meal MapperTests" */;
+			buildPhases = (
+				94AC5BE01AE78E88002C5AA2 /* Sources */,
+				94AC5BE11AE78E88002C5AA2 /* Frameworks */,
+				94AC5BE21AE78E88002C5AA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94AC5BE61AE78E88002C5AA2 /* PBXTargetDependency */,
+			);
+			name = "Meal MapperTests";
+			productName = "Meal MapperTests";
+			productReference = 94AC5BE41AE78E88002C5AA2 /* Meal MapperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94AC5BBD1AE78E87002C5AA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Ryan King";
+				TargetAttributes = {
+					94AC5BC41AE78E87002C5AA2 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					94AC5BE31AE78E88002C5AA2 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 94AC5BC41AE78E87002C5AA2;
+					};
+				};
+			};
+			buildConfigurationList = 94AC5BC01AE78E87002C5AA2 /* Build configuration list for PBXProject "Meal Mapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94AC5BBC1AE78E87002C5AA2;
+			productRefGroup = 94AC5BC61AE78E87002C5AA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94AC5BC41AE78E87002C5AA2 /* Meal Mapper */,
+				94AC5BE31AE78E88002C5AA2 /* Meal MapperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94AC5BC31AE78E87002C5AA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944F9DD51B0DB2CF00FBAED9 /* tempIcon.png in Resources */,
+				944F9DDA1B0DDE5400FBAED9 /* MealTableCell.xib in Resources */,
+				94AC5BDA1AE78E87002C5AA2 /* Main.storyboard in Resources */,
+				94177DAA1B4287B800A6F5B8 /* addPhotoIcon.jpg in Resources */,
+				94AC5BDF1AE78E88002C5AA2 /* LaunchScreen.xib in Resources */,
+				944414461B1C368B009664E9 /* arrowIcon 35x35.png in Resources */,
+				94903F211B073BE80090FF78 /* twitterIcon.jpeg in Resources */,
+				9494CB981B2CFC5A00278DCB /* sharedViaIcon.png in Resources */,
+				94903F1F1B073BE80090FF78 /* facebookIcon.png in Resources */,
+				94AC5BDC1AE78E87002C5AA2 /* Images.xcassets in Resources */,
+				94903F201B073BE80090FF78 /* messagesIcon.png in Resources */,
+				94120DDD1B1BFC1A00144E3C /* currentLocationIcon.png in Resources */,
+				9496A9A31B1DA46D00D7381A /* testLocation.gpx in Resources */,
+				94177DAC1B428A2E00A6F5B8 /* mealMaperIcon.png in Resources */,
+				94177DB01B428DE400A6F5B8 /* mealMaperIconWithoutBackground.png in Resources */,
+				944414401B1C33A2009664E9 /* listViewIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94AC5BE21AE78E88002C5AA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94AC5BC11AE78E87002C5AA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				947A535E1B1024720031891E /* MealTableViewCell.m in Sources */,
+				94A9F6761B082F010096A675 /* CategoryTagTableViewController.m in Sources */,
+				94AC5BD71AE78E87002C5AA2 /* DetailViewController.m in Sources */,
+				94AC5BD41AE78E87002C5AA2 /* MasterViewController.m in Sources */,
+				94AC5BD11AE78E87002C5AA2 /* Meal_Mapper.xcdatamodeld in Sources */,
+				94AC5BF61AE79104002C5AA2 /* AddMealViewController.m in Sources */,
+				94AC5BCE1AE78E87002C5AA2 /* AppDelegate.m in Sources */,
+				9470E9CD1B09EE6F00C650E3 /* Meal.m in Sources */,
+				94AC5BCB1AE78E87002C5AA2 /* main.m in Sources */,
+				9468C5E31B1322940004E657 /* MapViewController.m in Sources */,
+				9494CB9B1B2D0D5200278DCB /* DirectionsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94AC5BE01AE78E88002C5AA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94AC5BEB1AE78E88002C5AA2 /* Meal_MapperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94AC5BE61AE78E88002C5AA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94AC5BC41AE78E87002C5AA2 /* Meal Mapper */;
+			targetProxy = 94AC5BE51AE78E88002C5AA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94AC5BD81AE78E87002C5AA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94AC5BD91AE78E87002C5AA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94AC5BDD1AE78E88002C5AA2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94AC5BDE1AE78E88002C5AA2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94AC5BEC1AE78E88002C5AA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		94AC5BED1AE78E88002C5AA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94AC5BEF1AE78E88002C5AA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Meal Mapper/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		94AC5BF01AE78E88002C5AA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Meal Mapper/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		94AC5BF21AE78E88002C5AA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Meal MapperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meal Mapper.app/Meal Mapper";
+			};
+			name = Debug;
+		};
+		94AC5BF31AE78E88002C5AA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Meal MapperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meal Mapper.app/Meal Mapper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94AC5BC01AE78E87002C5AA2 /* Build configuration list for PBXProject "Meal Mapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94AC5BEC1AE78E88002C5AA2 /* Debug */,
+				94AC5BED1AE78E88002C5AA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94AC5BEE1AE78E88002C5AA2 /* Build configuration list for PBXNativeTarget "Meal Mapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94AC5BEF1AE78E88002C5AA2 /* Debug */,
+				94AC5BF01AE78E88002C5AA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94AC5BF11AE78E88002C5AA2 /* Build configuration list for PBXNativeTarget "Meal MapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94AC5BF21AE78E88002C5AA2 /* Debug */,
+				94AC5BF31AE78E88002C5AA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		94AC5BCF1AE78E87002C5AA2 /* Meal_Mapper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				94AC5BD01AE78E87002C5AA2 /* Meal_Mapper.xcdatamodel */,
+			);
+			currentVersion = 94AC5BD01AE78E87002C5AA2 /* Meal_Mapper.xcdatamodel */;
+			path = Meal_Mapper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 94AC5BBD1AE78E87002C5AA2 /* Project object */;
+}
